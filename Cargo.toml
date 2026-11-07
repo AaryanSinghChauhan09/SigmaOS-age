@@ -1,0 +1,8 @@
+[package]
+name = "sigmaos_age"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "sigmaos_age"
+path = "src/lib.rs"
