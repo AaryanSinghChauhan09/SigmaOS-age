@@ -1,65 +1,50 @@
-# SigmaOS-age Component Wiki
+# SigmaOS-SigmaOS-age Component Wiki
 
 ## Overview
-SigmaOS-age provides age (GNU) encryption and decryption support for the SigmaOS operating system. It demonstrates the cryptography subsystem and file encryption within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic crypto initialization.
+SigmaOS-SigmaOS-age provides GitHub description is a placeholder; component scope remains unclassified. for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Cryptography Abstraction
-- Fail-Fast on Crypto Initialization Errors
-- Deterministic Crypto Setup
-- Clear Abstraction Over Crypto APIs
-- Composition over Inheritance for crypto extensions
+- SigmaOS-age Abstraction
+- Fail-Fast on SigmaOS-age Initialization Errors
+- Deterministic SigmaOS-age Setup
+- Clear Abstraction Over SigmaOS-age APIs
+- Composition over Inheritance for SigmaOS-age extensions
 
 ## Architecture
-SigmaOS-age follows a cryptography pattern:
-- **Crypto Core**: Provides encryption, decryption, and key management primitives
-- **Age Format**: Supports age encryption format with recipient keys and data integrity
-- **Key Management**: Supports key generation, key storage, and key rotation
-- **Error Handling**: Fail-fast on invalid cryptography configurations or unsupported algorithms
+SigmaOS-SigmaOS-age follows a SigmaOS-age pattern:
+- **SigmaOS-age Core**: Provides SigmaOS-age support, SigmaOS-age management, and SigmaOS-age tracking
+- **Management**: Supports SigmaOS-age management, SigmaOS-age configuration, and SigmaOS-age lifecycle
+- **Tracking**: Supports SigmaOS-age status, SigmaOS-age tracking, and SigmaOS-age lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-age configurations or unsupported SigmaOS-age types
 
 ## API
 The component provides the following public APIs:
-- `crypto::age::encrypt(path, recipients)` - Encrypt a file using age protocol
-- `crypto::age::decrypt(path, recipient_key)` - Decrypt a file using age protocol
-- `crypto::key::generate(bits)` - Generate a new encryption key pair
-- `crypto::status::algorithms()` - Get supported cryptography algorithms
-- Error types for crypto failure scenarios or unsupported algorithms
+-  - Manage a SigmaOS-age by given configuration
+-  - Register a SigmaOS-age by given name
+-  - Get SigmaOS-age status and SigmaOS-age availability
+-  - Track SigmaOS-age management and SigmaOS-age tracking
+- Error types for SigmaOS-age failure scenarios or unsupported SigmaOS-age types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific cryptography configuration
-2. **Act**: Execute the code under test (encryption, decryption)
-3. **Assert**: Verify the expected crypto results
+1. **Arrange**: Set up test environment with specific SigmaOS-age configuration
+2. **Act**: Execute the code under test (SigmaOS-age init, SigmaOS-age management)
+3. **Assert**: Verify the expected SigmaOS-age results
 
 Example:
-```rust
-#[test]
-fn test_crypto_encrypt_aaa() {
-    // Arrange
-    let test_file = "/tmp/test-plaintext.txt";
-    let recipients = vec!["user@sigmaos.example"];
-    
-    // Act
-    let result = crypto::age::encrypt(test_file, &recipients);
-    
-    // Assert
-    assert!(result.is_ok());
-    let encrypted = result.unwrap();
-    assert!(encrypted.is_valid());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Cryptography initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all crypto failure scenarios
-- Unit tests provided for encryption and decryption
-- Integration tests for full cryptography subsystem with actual file encryption
+- Follows Rust best practices with 
+- SigmaOS-age initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-age failure scenarios
+- Unit tests provided for SigmaOS-age management and configuration
+- Integration tests for full SigmaOS-age system with actual SigmaOS-age integration
 
 ## TODO
-- Add support for additional cryptography algorithms (RSA, ECC, ChaCha20-Poly1305)
-- Expand key management capabilities (key rotation, revocation, key storage)
-- Add format support (PGP, OpenPG, S/MIME integration)
-- Create integration tests with actual file encryption and decryption
-- Implement key persistence and secure key storage features
+- Add support for additional SigmaOS-age types
+- Expand SigmaOS-age capabilities (SigmaOS-age features, SigmaOS-age configurations, SigmaOS-age tracking)
+- Add lifecycle features (SigmaOS-age tracking, SigmaOS-age lifecycle, SigmaOS-age propagation)
+- Create integration tests with actual SigmaOS-age systems and SigmaOS-age integration
+- Implement SigmaOS-age persistence and SigmaOS-age state management
